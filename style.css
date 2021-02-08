@@ -1,0 +1,169 @@
+body {
+    background-color: lightgray;
+    margin: 0
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+nav {   
+    min-height: 50px;
+    background-color: rgb(175, 43, 207);
+    padding: 0 20%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav > a {
+    color: lightgray;
+}
+
+main {
+    max-width: 1148px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto; 
+    grid-template-areas:
+    "main-title main-title main-title main-title"
+    "about about about about"
+    "quote quote quote quote"
+    "job-experiences job-experiences job-experiences skills"
+}
+
+#main-title {
+    grid-area: main-title;
+}
+
+#about {
+    grid-area: about;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.resume {
+    background-color: white;
+    padding: 40px;
+}
+
+#quote {
+    background-color: rgb(113, 0, 128);
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+    grid-area: quote;
+}
+
+#job-experiences {
+    background-color: rgb(236, 236, 236);
+    padding: 20px 70px 20px 20px;
+    margin: 10px 0;
+    grid-area: job-experiences;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
+    grid-template-rows: auto; 
+    grid-template-areas:
+    "experiences-title experiences-title  experiences-title experiences-title experiences-title experiences-title"
+    "exp1 exp1 exp2 exp2 exp3 exp3"
+    "exp4 exp4 exp4 exp5 exp5 exp5"
+}
+
+#experiences-title {
+    grid-area: experiences-title;
+}
+
+.job-exp1 {
+    border-radius: 20px;
+    background-color: rgb(221, 175, 252);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.job-exp2 {
+    border-radius: 20px;
+    background-color: rgb(221, 175, 252);
+    padding: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.job-description {
+    padding-left: 20px;
+}
+
+#exp1 {
+    grid-area: exp1;
+}
+
+#exp2 {
+    grid-area: exp2;
+}
+
+#exp3 {
+    grid-area: exp3;
+}
+
+#exp4 {
+    grid-area: exp4;
+}
+
+#exp5 {
+    grid-area: exp5;
+}
+
+#skills {
+    grid-area: skills;
+    background-color: white;
+    margin: 10px 0 10px 10px;
+    padding: 20px;
+}
+
+.company-logo {
+    max-width: 150px;
+    max-height: 100px;
+}
+
+footer {
+    background-color: #3e3e3e;
+    color: lightgray;
+    padding: 10px 11%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.social-icon {
+    max-width: 40px;
+    max-height: 40px;
+    padding: 5px;
+}
