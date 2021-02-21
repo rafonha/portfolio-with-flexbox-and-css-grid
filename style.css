@@ -39,17 +39,26 @@ main {
     max-width: 1148px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: (4, 1fr);
     grid-template-rows: auto; 
+    column-gap: 10px;
+    row-gap: 10px;
     grid-template-areas:
     "main-title main-title main-title main-title"
     "about about about about"
     "quote quote quote quote"
     "job-experiences job-experiences job-experiences skills"
+    "education other-activities other-experiences other-information"
 }
 
 #main-title {
     grid-area: main-title;
+}
+
+#profile-photo {
+    width: 20vw;
+    height: auto;
+    max-height: 300px;
 }
 
 #about {
@@ -67,7 +76,6 @@ main {
     background-color: rgb(113, 0, 128);
     color: white;
     padding: 20px;
-    margin-top: 10px;
     text-align: center;
     grid-area: quote;
 }
@@ -75,7 +83,6 @@ main {
 #job-experiences {
     background-color: rgb(236, 236, 236);
     padding: 20px 70px 20px 20px;
-    margin: 10px 0;
     grid-area: job-experiences;
     display: grid;
     column-gap: 10px;
@@ -138,13 +145,40 @@ main {
 #skills {
     grid-area: skills;
     background-color: white;
-    margin: 10px 0 10px 10px;
     padding: 20px;
 }
 
 .company-logo {
     max-width: 150px;
     max-height: 100px;
+}
+
+#education {
+    grid-area: education;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(221, 175, 252);
+}
+
+#other-activities {
+    grid-area: other-activities;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+#other-experiences {
+    grid-area: other-experiences;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(221, 175, 252);
+}
+
+#other-information {
+    grid-area: other-information;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
 }
 
 footer {
