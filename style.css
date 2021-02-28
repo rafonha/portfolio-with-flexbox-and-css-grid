@@ -48,7 +48,7 @@ main {
     "about about about about"
     "quote quote quote quote"
     "job-experiences job-experiences job-experiences skills"
-    "education other-activities other-experiences other-information"
+    "education education other-experiences other-experiences"
 }
 
 #main-title {
@@ -156,29 +156,15 @@ main {
 #education {
     grid-area: education;
     margin-bottom: 10px;
-    padding: 10px;
-    background-color: rgb(221, 175, 252);
-}
-
-#other-activities {
-    grid-area: other-activities;
-    margin-bottom: 10px;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: white;
 }
 
 #other-experiences {
     grid-area: other-experiences;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: rgb(221, 175, 252);
-}
-
-#other-information {
-    grid-area: other-information;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: white;
 }
 
 footer {
